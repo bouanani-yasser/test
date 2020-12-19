@@ -131,7 +131,7 @@ header .menu .menu-items .item a {
 }
 
 .app .hero-section {
-  background-image: url("./public/assets/img/bg-hero-2.png");
+  background-image: url("./assets/img/bg-hero-2.png");
   background-size: cover;
 }
 
