@@ -1,0 +1,204 @@
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+   margin: 0;
+}
+
+@import './src/sass/nav';
+.app {
+   padding: 0;
+   section {
+      height: 105vh;
+      width: 100%;
+   }
+
+   .g-content {
+      width: 100%;
+      height: 80%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      .desc {
+         display: flex;
+         flex-direction: column;
+         width: 40%;
+         height: 50vh;
+         padding: 10px;
+         margin-top: 10%;
+         margin-left: 100px;
+         p {
+            padding: 10px;
+         }
+      }
+   }
+   .b-titel {
+      position: relative;
+      margin: 10px;
+      margin-left: 0;
+      margin-bottom: 50px;
+      &:after {
+         content: '';
+         position: absolute;
+         left: 10px;
+         bottom: -10%;
+         background-color: #f727ff;
+         width: 50px;
+         height: 10px;
+      }
+   }
+
+   .hero-section {
+      background-image: url('./public/assets/img/bg-hero-2.png');
+      background-size: cover;
+   }
+   .section-2 {
+      position: relative;
+      background-color: #e8ebf0;
+      .desc {
+         z-index: 10;
+         .b-titel {
+            color: #000;
+         }
+         p {
+            color: #707070;
+         }
+      }
+      img {
+         z-index: 1;
+         position: absolute;
+         top: 0;
+         right: 0;
+         width: 70%;
+         height: 100%;
+      }
+   }
+   .section-3 {
+      position: relative;
+      background: linear-gradient(to bottom right, #000, #545454);
+      .desc {
+         z-index: 10;
+         .b-titel {
+            color: #fff;
+            font-size: 20px;
+            padding: 10px;
+         }
+         p {
+            color: #707070;
+         }
+         h1 {
+            padding: 10px;
+         }
+      }
+      img {
+         z-index: 1;
+         position: absolute;
+         top: 0;
+         left: -15%;
+         width: 115%;
+         height: 100%;
+      }
+   }
+   .section-4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 40px;
+      .b-titel {
+         span {
+            color: #b9b9b9;
+         }
+         &::after {
+            left: 60%;
+            width: 30px;
+         }
+      }
+   }
+   .section-5 {
+      position: relative;
+      background: linear-gradient(to bottom right, #f727ff, #7c1480);
+      .desc {
+         z-index: 10;
+         .b-titel {
+            color: #fff;
+            font-size: 20px;
+            padding: 10px;
+            &::after {
+               background-color: #000;
+            }
+         }
+         h1 {
+            padding: 10px;
+         }
+      }
+      .banner {
+         display: flex;
+         justify-content: flex-end;
+         align-items: center;
+         width: 70%;
+         height: 60%;
+         img {
+            z-index: 1;
+            margin: auto 10px;
+         }
+         .b-titel {
+            margin: auto 10px;
+            font-size: 20px;
+            padding-top: 10px;
+            &::after {
+               top: -20%;
+               background-color: #000;
+            }
+         }
+         p {
+            padding: 0 10px;
+         }
+      }
+   }
+
+   .section-6 {
+      background-color: #000;
+      .desc {
+         width: 30%;
+         .b-titel {
+            color: #fff;
+            font-size: 25px;
+         }
+         p {
+            color: #707070;
+         }
+         h1 {
+            padding: 10px;
+         }
+      }
+      .contact-form {
+         width: 60%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+
+         input {
+            all: unset;
+            width: 80%;
+            margin: 10px;
+            padding: 10px;
+            padding-left: 0;
+            border-bottom: 1px solid #ccc;
+            &::focus {
+               border: 1px solid #fff;
+            }
+         }
+         button {
+            all: unset;
+            align-self: flex-start;
+            padding: 10px;
+            margin: 10px;
+            margin-left: 80px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+         }
+      }
+   }
+}
